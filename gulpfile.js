@@ -3,7 +3,7 @@ let less = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
 
 
-let autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4','opera>=5', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11'];
+let autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4','opera>=5', 'safari>=5', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11'];
 gulp.task('less', function () {
     return gulp.src('styles/main.less')
 
