@@ -119,6 +119,18 @@ section .desc {
 
   .pre-title {
     margin-bottom: 50px;
+
+    img {
+      height: 25px;
+
+      &.mobile-logo {
+        display: none;
+        .media-phone({
+          display: inline;
+        })
+      }
+    }
+
   }
 
 }
@@ -197,6 +209,7 @@ section .desc {
     transform: rotate(3.5deg);
     background-attachment: fixed;
 
+
     &:before {
       content: "";
       width: 100%;
@@ -225,16 +238,16 @@ section .desc {
     &.img-right-block {
       .media-phone({
 
-          -webkit-transform: rotate(180deg);
-          -moz-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-          -o-transform: rotate(180deg);
-          transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
 
-          direction: rtl;
+        direction: rtl;
 
 
-        &> [class*="col-"] {
+        & > [class*="col-"] {
           -webkit-transform: rotate(-180deg);
           -moz-transform: rotate(-180deg);
           -ms-transform: rotate(-180deg);
@@ -245,7 +258,6 @@ section .desc {
         }
       })
     }
-
 
 
     img {
@@ -263,7 +275,8 @@ section .desc {
       text-align: center;
     })
   }
-  .right-block{
+
+  .right-block {
     .media-phone({
       text-align: center;
     })

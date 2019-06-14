@@ -12,7 +12,7 @@ gulp.task('less', function () {
             browsers: autoprefixBrowsers,
             cascade: false
         }))
-        .pipe(gulp.dest('styles/'))
+        .pipe(gulp.dest('css/'))
 });
 
 
